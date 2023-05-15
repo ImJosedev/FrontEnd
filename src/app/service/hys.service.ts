@@ -8,7 +8,7 @@ import { Hys } from '../model/hys';
   providedIn: 'root'
 })
 export class HysService {
-  URL = environment.URL + 'hys/';
+  URL ='https://backendjz.onrender.com/' + 'hys/';
 
   constructor(private httpClient: HttpClient) { }
 

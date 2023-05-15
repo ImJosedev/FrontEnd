@@ -1,7 +1,7 @@
 export const environment ={
     production: false,
 
-    URL: 'http://localhost:8080/',
+    URL: 'https://backendjz.onrender.com/',
   firebase: {
     projectId: 'jczfrondend',
     appId: '1:1083128091749:web:c496ee6a91e3a207cc628c',
