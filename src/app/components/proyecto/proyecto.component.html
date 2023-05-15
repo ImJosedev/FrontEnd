@@ -1,0 +1,43 @@
+<section class="gradient-custom text-center">
+    <div class="row text-center">
+        <h1 id="experiencia">Proyectos</h1>
+        <!-- <div class="col lg-2 text-start">
+            <button type="button" class="btn btn-outline-light" routerLink="/newproyecto" *ngIf="isLogged">
+                <i class="bi bi-plus-square"></i>
+            </button>
+        </div> -->
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11" id="trabajos">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let proyecto of proyecto">
+                        <td class="">
+                            <h5>{{proyecto.nombre}}</h5>
+                        </td>
+                        <td>{{proyecto.descripcion}}</td>
+                        <td>
+                            <div>
+                                <!-- establecemos las medidas de la foto de perfil en distintas pantallas -->
+                                <img src="../../../assets/Adcripcion.PNG" class="img-fluid rounded mx-auto d-block" id="proyectoFoto">
+                            </div>
+                        </td>
+                        <div class="align-item-center">
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-outline-light" routerLink="/editproyecto/{{proyecto.id}}">
+                                <i class="bi bi-pen"></i> Editar
+                            </button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-outline-light" (click)="delete(proyecto.id)">
+                                <i class="bi bi-trash3"></i> Borrar
+                            </button>
+                        </td>
+                    </div>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</section>

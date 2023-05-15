@@ -1,0 +1,49 @@
+.gradient-custom {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    
+    background: #0f021d;
+
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+    
+}
+.row{
+        padding: 50px;
+        margin-top: 0%;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 50px;
+        box-shadow: 10px 10px 10px black;
+        justify-content: center;
+        
+        background: rgba(95, 93, 93, 0.133);
+        border: 2px solid rgba(186, 182, 182, 0.294);
+    }
+
+
+.conteiner{
+    width: auto;
+}
+h1,h2,h2,h4,h5,h6, td{
+    color: white;
+}
+.parte1, .parte2{
+ display: inline-block;
+ text-align: justify;
+}
+.proyectoFoto{
+    box-shadow: 10px 10px 30px black;
+    border-radius: 10px;
+    margin: 15px;
+}
+img{
+    width: 70%;
+    transition: all .5s ease;
+}
+img:hover{
+    width: 100%;
+}

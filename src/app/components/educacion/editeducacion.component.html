@@ -1,0 +1,38 @@
+<section class=" gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5">
+                            <div class="container" *ngIf="educacion">
+                                <div class="row">
+                                    <div>
+                                        <form (ngSubmit)="onUpdate()" novalidate f="ngForm">
+                                            <div class="form-group">
+                                                <h2 class="fw-bold mb-2 text-uppercase">Educación</h2>
+                                                <label for="nombreEd" class="titles">Nombre de la Institución</label>
+                                                <input type="text" class="form-control" id="nombreEd" name="nombreEd"
+                                                    [(ngModel)]="educacion.nombreEd" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="descripcionEd" class="titles"> Titulo</label>
+                                                <input type="text" class="form-control" id="descripcionEd"
+                                                    name="descripcionEd" [(ngModel)]="educacion.descripcionEd" required>
+                                            </div>
+                                            <button class="btn btn-light btn-lg px-5 btnAdd">
+                                                Actualizar
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

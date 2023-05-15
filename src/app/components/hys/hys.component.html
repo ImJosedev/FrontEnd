@@ -1,0 +1,36 @@
+<section class="gradient-custom text-center">
+    <div class="row d-flex align-items-center">
+        <div>
+            <h1>Hard & Soft Skills</h1>
+            <div class="col-lg-2">
+                <button type="button" routerLink="/newhys" class="btn btn-outline-light" *ngIf="isLogged">
+                    <i class="bi bi-plus-square"></i>
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="text-center col-sm-4 col-md-4 col-lg-4 d-flex justify-content-center "
+            *ngFor="let hys of hys">
+            <circle-progress [percent]="hys.porcentaje" [radius]="100" [title]="hys.nombre" [titleColor]="'#fff'"
+                [showTitle]="true" [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="20"
+                [innerStrokeWidth]="2" [outerStrokeColor]="'white'" [innerStrokeColor]="'white'" [animation]="true"
+                [animationDuration]="300">
+            </circle-progress>
+            <div class="d-flex align-items-center">
+                <td *ngIf="isLogged">
+                    <button class="btn btn-outline-light" routerLink="/edithys/{{hys.id}}">
+                        <i class="bi bi-pen"></i>
+                    </button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-outline-light" (click)="delete(hys.id)">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </td>
+            </div>
+        </div>
+
+    </div>
+</section>
